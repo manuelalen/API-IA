@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ManolitoDB Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dark">
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="logo">ManolitoDB<span>Chat</span></div>
+        <div class="theme-toggle">
+          <span>☀️</span>
+          <label class="switch">
+            <input type="checkbox" id="themeSwitch" checked />
+            <span class="slider"></span>
+          </label>
+          <span>🌙</span>
+        </div>
+      </header>
+
+      <main class="chat-container">
+        <div id="messages" class="messages"></div>
+
+        <form id="chatForm" class="input-area">
+          <textarea
+            id="userInput"
+            rows="2"
+            placeholder="Escribe tu pregunta sobre los datos de producción..."
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
